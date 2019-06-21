@@ -29,6 +29,7 @@ class TabLink {
 
     // Add a click event that invokes this.selectTab
     this.tabElement.addEventListener('click', () => this.selectTab());
+    // TweenMax.to(`.card[data-tab="${this.tabData}"]`, 3, { rotation: 360, scale: 1 });
   }
 
   selectTab(){

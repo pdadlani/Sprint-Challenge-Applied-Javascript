@@ -195,6 +195,8 @@ body {
 }
 .tabs .topics .tab:hover {
   text-decoration: underline;
+  color: rgb(147,29,37);
+  background-color: white;
 }
 .tabs .topics .active-tab {
   background-color: #fff;
@@ -301,4 +303,22 @@ body {
 .carousel img {
   width: 100%;
   display: none;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
