@@ -14,12 +14,12 @@
 // */
 
 // Current index for slides
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 // change slide
-function plusSlides(n) {
-    // console.log('plus slides called with n of:' + n)
+function changeSlides(n) {
+    // console.log('change slides called with n of:' + n)
     showSlides(slideIndex += n);
 }
 
@@ -41,11 +41,11 @@ function showSlides(n) {
 // set event listener for left button
 const leftButton = document.querySelector('.left-button');
 // console.log(leftButton);
-leftButton.addEventListener('click', () => plusSlides(-1));
+leftButton.addEventListener('click', () => changeSlides(-1));
 
 // set event listener for right button
 const rightButton = document.querySelector('.right-button');
 // console.log(rightButton);
-rightButton.addEventListener('click', () => plusSlides(1));
+rightButton.addEventListener('click', () => changeSlides(1));
 
 
