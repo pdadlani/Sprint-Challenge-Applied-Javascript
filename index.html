@@ -8,7 +8,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="./components/Tabs/Tabs.js" async></script>
-  <!-- <script src="./components/Carousel/Carousel.js" async></script> -->
+  <script src="./components/Carousel/Carousel.js" async></script>
 </head>
 
 <body>
@@ -30,34 +30,34 @@
 
   <!-- HEADER COMPONENT -->
   <div class="header">
-    <span class="date">SMARCH 28, 2018</span>
+    <span class="date">21st June 3019</span>
     <h1>Lambda Times</h1>
-    <span class="temp">98°</span>
+    <span class="temp">68°</span>
   </div>
 
   <!-- TABS COMPONENT -->
   <div class="tabs">
     <div class="topics">
       <span class="title">TRENDING TOPICS:</span>
-      <div data-tab="all" class="tab active-tab">ALL</div>
-      <div data-tab="javascript" class="tab">JAVASCRIPT</div>
-      <div data-tab="technology" class="tab">TECHNOLOGY</div>
-      <div data-tab="node" class="tab">NODE.JS</div>
-      <div data-tab="jquery" class="tab">jQUERY</div>
-      <div data-tab="bootstrap" class="tab">BOOTSTRAP</div>
+      <div data-tab="all" class="tab active-tab fade">ALL</div>
+      <div data-tab="javascript" class="tab fade">JAVASCRIPT</div>
+      <div data-tab="technology" class="tab fade">TECHNOLOGY</div>
+      <div data-tab="node" class="tab fade">NODE.JS</div>
+      <div data-tab="jquery" class="tab fade">jQUERY</div>
+      <div data-tab="bootstrap" class="tab fade">BOOTSTRAP</div>
     </div>
   </div>
 
   <!-- STRETCH GOAL: ONLY UNCOMMENT THIS WHEN YOU ARE FINISHED WITH THE MAIN OBJECTIVE -->
   <!-- CAROUSEL COMPONENT -->
-  <!-- <div class="carousel">
+  <div class="carousel">
     <div class="left-button"><</div>
-    <img src="./assets/carousel/mountains.jpeg" />
-    <img src="./assets/carousel/computer.jpeg" />
-    <img src="./assets/carousel/trees.jpeg" />
-    <img src="./assets/carousel/turntable.jpeg" />
+    <img class='fade' src="./assets/carousel/mountains.jpeg" />
+    <img class='fade' src="./assets/carousel/computer.jpeg" />
+    <img class='fade' src="./assets/carousel/trees.jpeg" />
+    <img class='fade' src="./assets/carousel/turntable.jpeg" />
     <div class="right-button">></div>
-  </div> -->
+  </div>
 
   <!-- CARDS COMPONENT -->
   <div class="cards-container">
@@ -70,6 +70,26 @@
           <img src="./assets/sir.jpg" />
         </div>
         <span>By SIR RUFF'N'STUFF</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="bootstrap">
+      <div class="headline">ES6: What's this all about?!</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/max.jpg" />
+        </div>
+        <span>By PD</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="technology">
+      <div class="headline">Technology can be cool & fun</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/max.jpg" />
+        </div>
+        <span>By YES I DID IT</span>
       </div>
     </div>
 
