@@ -6,12 +6,6 @@ class TabLink {
     // Get the `data-tab` value from this.tabElement and store it here
     this.tabData = this.tabElement.dataset.tab; 
     console.log(this.tabData);
-
-
-    // from yesterday's project. DELETE after use
-    // Using the custom data attribute get the associated Item element
-    //this.itemElement = document.querySelector(`.tabs-item[data-tab='${this.data}']`);
-
     
     // We need to find out if a user clicked 'all' cards or a specific category.  Follow the instructions below to accomplish this task:    
     
@@ -29,7 +23,6 @@ class TabLink {
 
     // Add a click event that invokes this.selectTab
     this.tabElement.addEventListener('click', () => this.selectTab());
-    // TweenMax.to(`.card[data-tab="${this.tabData}"]`, 3, { rotation: 360, scale: 1 });
   }
 
   selectTab(){

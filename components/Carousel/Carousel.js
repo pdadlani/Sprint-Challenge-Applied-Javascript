@@ -13,37 +13,20 @@
 //     6. Have fun!
 // */
 
+// Current index for slides
 var slideIndex = 1;
 showSlides(slideIndex);
 
+// change slide
 function plusSlides(n) {
-    console.log('plus slides called with n of:' + n)
+    // console.log('plus slides called with n of:' + n)
     showSlides(slideIndex += n);
-
 }
-
-function currentSlide(n) {
-    console.log('current slide called with n of:' + n)
-    showSlides(slideIndex = n);
-}
-
-// set event listener for left button
-const leftButton = document.querySelector('.left-button');
-console.log(leftButton);
-leftButton.addEventListener('click', () => plusSlides(-1));
-
-// set event listener for right button
-const rightButton = document.querySelector('.right-button');
-console.log(rightButton);
-rightButton.addEventListener('click', () => plusSlides(1));
-
-
 
 function showSlides(n) {
     var i;
     var slides = document.querySelectorAll(".carousel img");
-    console.log(slides);
-    //var dots = document.getElementsByClassName("dot");
+    // console.log(slides);
     if (n > slides.length) {
         slideIndex = 1
     } else if (n < 1) {
@@ -52,6 +35,17 @@ function showSlides(n) {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-
     slides[slideIndex - 1].style.display = "block";
 }
+
+// set event listener for left button
+const leftButton = document.querySelector('.left-button');
+// console.log(leftButton);
+leftButton.addEventListener('click', () => plusSlides(-1));
+
+// set event listener for right button
+const rightButton = document.querySelector('.right-button');
+// console.log(rightButton);
+rightButton.addEventListener('click', () => plusSlides(1));
+
+
